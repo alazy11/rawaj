@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: "Almarai", sans-serif; */
+    /* font-family: "Tajawal", sans-serif; */
+    font-family: "El Messiri", sans-serif;
+    font-size: 1rem;
+    background-color: #f8f7f7;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.container-boot {
+    width: 100%;
+    margin: auto;
+}
+
+@media (min-width:576px) {
+    .container-boot {
+        width: 540px;
+    }
+}
+@media (min-width:768px) {
+    .container-boot {
+        width: 720px;
+    }
+}
+@media (min-width:992px) {
+    .container-boot {
+        width: 960px;
+    }
+}
+@media (min-width:1200px) {
+    .container-boot {
+        width: 1140px;
+    }
+}
+@media (min-width:1400px) {
+    .container-boot {
+        width: 1320px;
+    }
+}
+
+header {
+    /* padding-block: 8px; */
+    border-bottom: 2px solid #eee;
+    background-color: #f8f7f7;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-mobile {
+    transition: all .2s;
+}
+#nav-mobile.show {
+    top: 50px;
+}
+
+.logo {
+    width: 50px;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    max-width: 100%;
+}
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-item {
+    
+}
+.nav-item a{
+    display: block;
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-block:20px;
+    padding-inline: 10px;
+    color: #848484;
+}
+.nav-item a.active{
+    font-weight: 600;
+    color: #8fc640;
+}
+
+.nav-item a::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    height: 2px;
+    background: #8fc640;
+    width: 0px;
+}
+.nav-item a.active::before {
+    width: 100%;
+}
+.language {
+    font-weight: 600;
+}
+
+/* //? ///////////////////////////////////////////// */
+.landing-section {
+    padding-block: 50px;
+    height: calc(100vh - 68px);
+}
+.landing-section__container {
+    height: 100%;
+}
+
+.client-img-container {
+    border: 3px solid #fff;
+    box-shadow: -2px 2px 15px -3px rgba(000, 000, 000, .3);
+    display: inline-block;
+}
+
+.icon-shadow {
+    box-shadow: 0px 8px 9px -1px rgba(000,000,000,.2);
+}
+
+.overlay-effect {
+    border-image: fill 0 linear-gradient(#00000000, #2b2b2b);
+    bottom: 0;
+    padding-bottom: 20px;
+    padding-inline: 15px;
+    padding-top: 10px;
+width: 100%;
+}
+.overlay-effect-big {
+    padding-bottom: 40px;
+    padding-inline: 25px;
+}
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+}
+.article-body{
+    height: 58px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.client-card-shadow {
+    box-shadow: -9px 15px 50px -9px rgba(000,000,000,.3);
+}
+.client-card-shadow:not(:first-child) {
+    box-shadow:-5px 35px 48px -9px rgba(000,000,000,.3);
+}
+
+.order-btn-shadow {
+    box-shadow: 0px 7px 14px -1px rgba(000,000,000,.2);
+}
+
+.product-service {
+    cursor: pointer;
+    transition: all .2s;
+}
+.product-service.active {
+    border-inline-start: 1px solid #76ce06;
+}
+.product-service.active h3{
+    transition: all .2s;
+    font-size: 1.8rem;
+    opacity: 1;
+}
+.product-service.active p{
+    transition: all .2s;
+    display: block;
+}
+.product-service-img[data-order='1']{
+    top: -40px !important;
+    left: 40px !important;
+    z-index: 100 !important;
+
+}
+.product-service-img[data-order='1'] img {
+    animation: opacity-animation .3s linear 1 forwards;
+}
+.product-service-img[data-order='2']{
+    top: -20px !important;
+    left: 20px !important;
+    z-index: 50 !important;
+}
+.product-service-img[data-order='3']{
+    z-index: 20 !important;
+}
+.product-service-img{
+    box-shadow: -9px 9px 21px 0px rgba(000,000,000,.3);
+
+}
+
+
+@keyframes opacity-animation {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.quote-rotate {
+    transform: rotateX(180deg);
+}
