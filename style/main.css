@@ -70,7 +70,7 @@ header {
 }
 
 .logo {
-    width: 50px;
+    width: 60px;
     align-self: stretch;
     display: flex;
     align-items: center;
@@ -120,6 +120,12 @@ header {
 .landing-section {
     padding-block: 50px;
     height: calc(100vh - 68px);
+}
+
+@media (max-width:768px) {
+    .landing-section {
+        height: auto;
+    }
 }
 .landing-section__container {
     height: 100%;
@@ -205,9 +211,25 @@ width: 100%;
 }
 .product-service-img{
     box-shadow: -9px 9px 21px 0px rgba(000,000,000,.3);
-
 }
 
+@media (max-width:768px) {
+    .product-service-img{
+        top: 60% !important;
+        left: 45% !important;
+        transform: translate(-50%,-50%);
+    }
+    .product-service-img[data-order='1']{
+        top: calc(60% - 40px)  !important;
+        left: calc(45% + 40px)  !important;
+        z-index: 100 !important;
+    
+    }
+    .product-service-img[data-order='2']{
+        top: calc(60% - 20px)  !important;
+        left: calc(45% + 20px)  !important;
+    }
+}
 
 @keyframes opacity-animation {
     0%{

@@ -24,7 +24,7 @@
 </head>
 <body>
     
-    <header class="fixed z-50 w-full top-0 right-0 left-0">
+    <header class="fixed z-[1000] w-full top-0 right-0 left-0 px-4 sm:px-0">
 
         <div class="container-boot">
             <div class="header hidden md:flex">
@@ -140,7 +140,7 @@
 
                     <div class="hidden items-end justify-between w-full md:flex">
 
-                        <div class="w-[300px]">
+                        <div class="w-[300px] max-w-full">
                             <div class="relative w-full">
                                 <img src="./image/landing1.jpg" alt="landing 1" class="w-full rounded-2xl">
     
@@ -169,12 +169,44 @@
 
                     </div>
 
-                    <div class="absolute flex flex-col justify-between items-center h-full right-1/2 translate-x-1/2 w-full">
+                    <div class="relative md:absolute flex flex-col justify-between items-center gap-10 h-full right-1/2 translate-x-1/2 w-full">
 
                         <div class="text-center">
                             <h1 class="text-5xl font-semibold leading-[1.7] mb-4">مرحبا بك في رواج</h1>
                             <p class="mb-6">مصدرك الأول للمواد الغذائية بالجملة عالية الجودة</p>
                             <a href="#" class="bg-[#8fc640] text-white text-[.8rem] py-2 px-5 rounded-[5px] font-semibold">استكشف منتجاتنا</a>
+                        </div>
+
+
+                        <div class="flex flex-col items-center gap-10 justify-between w-full md:hidden">
+
+                            <div class=" w-full relative">
+                                <div class="w-[300px] max-w-full m-auto">
+                                    <img src="./image/landing1.jpg" alt="landing 1" class="w-full rounded-2xl">
+        
+                                    <div class="absolute top-1/2 -translate-y-1/2 rtl:left-0">
+                                        <div class="w-[200px] overflow-hidden bg-[#d9d9d95e] backdrop-blur-[5px] p-3">
+                                            <p class="font-semibold mb-2.5">ماذا نقدم؟</p>
+                                            <p class="text-[.8rem]">نلتزم بتقديم افضل المواد الغذائية للمطاعم والمتاجر وخدمات التموين.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+    
+                            <div class="w-full relative">
+                                <div class="w-[300px] max-w-full m-auto">
+                                    <img src="./image/landing1.jpg" alt="landing 1" class="w-full rounded-2xl">
+        
+                                    <div class="absolute top-1/2 -translate-y-1/2 rtl:right-0">
+                                        <div class="w-[200px] overflow-hidden bg-[#d9d9d95e] backdrop-blur-[5px] p-3">
+                                            <p class="text-[.8rem]">نختار منتجاتنا بعناية من افضل المزارع والمنتجين</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+    
+    
                         </div>
 
                         <div class="relative">
@@ -241,7 +273,7 @@
                         <span class="font-bold text-[#8fc640]">
                             رواج
                         </span>
-                         لتجارة المواد الغذائية, تأسست عام 2005, وهي شركة رائدة في تقديم المنتجات الغذائية بالجملة. 
+                            لتجارة المواد الغذائية, تأسست عام 2005, وهي شركة رائدة في تقديم المنتجات الغذائية بالجملة. 
                     </p>
                     <p>
                         نلتزم بتوفير منتجات عالية الجودة وطازجة بأسعار تنافسية, مع خدمة توصيل موثوقة, نحن نفخر بالجودة والتنوع والشفافية في تعاملاتنا ونسعى لبناء علاقات طويلة الامد مع عملائنا.
@@ -371,12 +403,12 @@
 
 
 
-        <section class="py-12">
+        <section class="py-12 px-3 sm:px-0">
             <div class="container-boot h-full">
 
-                <div class="flex items-center justify-between">
+                <div class="flex items-center justify-between flex-col md:flex-row">
 
-                    <div class="w-[44%]">
+                    <div class="w-full md:w-[44%]">
                         <div class="mb-10">
                             <h2 class="text-[2.7rem] font-medium text-[#76ce06] mb-2">
                                 الخدمات التي نقدمها
@@ -421,7 +453,7 @@
 
                     </div>
 
-                    <div class="relative h-full self-stretch">
+                    <div class="relative h-[450px] self-stretch md:h-full">
 
                         <div data-order="1" class="product-service-img w-[300px] h-[345px] border-[6px] border-solid border-[#d2e2c3] rounded-xl absolute top-0 rtl:left-0">
                             <!-- <img src="./image/service1.png" alt=""> -->
