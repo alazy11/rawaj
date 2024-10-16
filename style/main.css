@@ -70,10 +70,18 @@ header {
 }
 
 .logo {
-    width: 60px;
+    width: 50px;
     align-self: stretch;
     display: flex;
     align-items: center;
+}
+@media (max-width:768px) {
+    .logo {
+        width: 40px;
+    }
+    header {
+        padding-block: 8px;
+    }
 }
 .logo img{
     max-width: 100%;
@@ -89,7 +97,7 @@ header {
 .nav-item a{
     display: block;
     position: relative;
-    font-size: 1.1rem;
+    font-size: .875rem;
     font-weight: 500;
     padding-block:20px;
     padding-inline: 10px;
@@ -181,7 +189,7 @@ width: 100%;
     transition: all .2s;
 }
 .product-service.active {
-    border-inline-start: 1px solid #76ce06;
+    border-inline-start:1px solid #b7db84;
 }
 .product-service.active h3{
     transition: all .2s;
